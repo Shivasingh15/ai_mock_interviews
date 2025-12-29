@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🤖 InterPrep — AI Mock Interview Platform
 
-## Getting Started
+InterPrep is a high-performance, full-stack AI-driven application designed to help job seekers master their interview skills. By leveraging state-of-the-art Generative AI, it provides a realistic, low-pressure environment for practicing dynamic interview scenarios.
 
-First, run the development server:
+🚀 View Live Demo:- https://ai-mock-interviews-alpha-one.vercel.app/sign-in
 
-```bash
+
+🚀 Key Features:-
+
+* 🎙️ Real-time AI Interviewer: A state-driven "Call" system managing Connecting, Active, and Finished statuses with synchronized UI animations.
+
+* 🧠 Gemini AI Integration: Dynamic question generation tailored to specific roles and real-time response analysis.
+
+* 🔐 Secure Authentication: Full user lifecycle management including Sign-in/Sign-up via Firebase Auth.
+
+* ⚡ Modern UI/UX: A sleek, dark-themed interface built with Tailwind CSS, optimized for both desktop and mobile performance.
+
+* 📊 Persistent Progress: Interview history and user data stored securely in Cloud Firestore.
+
+
+Installation
+Clone the Repo
+
+https://github.com/Shivasingh15/ai_mock_interviews
+cd ai-mock-interviews
+
+
+Install Dependencies
+
+npm install
+
+
+Environment Setup Create a .env.local file:
+
+NEXT_PUBLIC_FIREBASE_API_KEY=your_key
+GEMINI_API_KEY=your_key
+
+
+Run Development Server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🛠️ Technology Stack:-
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* Frontend: Next.js 15 (App Router), TypeScript, Tailwind CSS.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ * AI Engine: Google Gemini API for dynamic question generation.
 
-## Learn More
+* Backend/Database: Firebase (Authentication & Firestore) for secure user sessions and data persistence.
 
-To learn more about Next.js, take a look at the following resources:
+* API Testing: HTTPie for architecting and testing structured API requests.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* IDE: WebStorm for advanced development and type safety.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
